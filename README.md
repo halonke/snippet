@@ -19,15 +19,10 @@
 ### Deutsches System-Setup
 
 ```bash
-# wget
-wget -qO /tmp/de_system_setup.sh \
-  https://raw.githubusercontent.com/halonke/snippet/main/scripts/de_system_setup.sh \
-  && sudo bash /tmp/de_system_setup.sh
-
-# curl
-curl -fsSL \
-  https://raw.githubusercontent.com/halonke/snippet/main/scripts/de_system_setup.sh \
-  | sudo bash
+wget -qO /tmp/de_system_setup.sh https://raw.githubusercontent.com/halonke/snippet/main/scripts/de_system_setup.sh && sudo bash /tmp/de_system_setup.sh
+```
+```bash
+curl -fsSL https://raw.githubusercontent.com/halonke/snippet/main/scripts/de_system_setup.sh | sudo bash
 ```
 
 **Kompatibel mit:** Debian 11/12/13 · Ubuntu 20.04–25.10 · Proxmox VE · Raspberry Pi OS
@@ -37,15 +32,10 @@ curl -fsSL \
 ### Docker Manager (`dockerm`)
 
 ```bash
-# wget – einmalige Installation (installiert sich selbst als 'dockerm')
-wget -qO /tmp/dockerm.sh \
-  https://raw.githubusercontent.com/halonke/snippet/main/scripts/dockerm.sh \
-  && sudo bash /tmp/dockerm.sh
-
-# curl
-curl -fsSL \
-  https://raw.githubusercontent.com/halonke/snippet/main/scripts/dockerm.sh \
-  | sudo bash
+wget -qO /tmp/dockerm.sh https://raw.githubusercontent.com/halonke/snippet/main/scripts/dockerm.sh && sudo bash /tmp/dockerm.sh
+```
+```bash
+curl -fsSL https://raw.githubusercontent.com/halonke/snippet/main/scripts/dockerm.sh | sudo bash
 ```
 
 Nach der ersten Ausführung steht `dockerm` systemweit zur Verfügung:
@@ -63,19 +53,13 @@ sudo dockerm --update-self      # dockerm aktualisieren
 ## Updates
 
 ```bash
-# Über Menüpunkt 41 (dockerm aktualisieren)
-sudo dockerm  →  41
-
-# Oder direkt per wget
-wget -qO /usr/local/bin/dockerm \
-  https://raw.githubusercontent.com/halonke/snippet/main/scripts/dockerm.sh \
-  && chmod +x /usr/local/bin/dockerm
-
-# Oder per curl
-curl -fsSL \
-  https://raw.githubusercontent.com/halonke/snippet/main/scripts/dockerm.sh \
-  -o /usr/local/bin/dockerm && chmod +x /usr/local/bin/dockerm
+wget -qO /usr/local/bin/dockerm https://raw.githubusercontent.com/halonke/snippet/main/scripts/dockerm.sh && chmod +x /usr/local/bin/dockerm
 ```
+```bash
+curl -fsSL https://raw.githubusercontent.com/halonke/snippet/main/scripts/dockerm.sh -o /usr/local/bin/dockerm && chmod +x /usr/local/bin/dockerm
+```
+
+Oder über Menüpunkt **41** direkt in `dockerm` → aktualisiert sich selbst von GitHub.
 
 ---
 
